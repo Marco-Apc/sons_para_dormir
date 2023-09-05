@@ -1,16 +1,20 @@
-# sons
+# Sons Para Dormir
 
-A new Flutter project.
+O projeto tem como objetivo criar um aplicativo que reproduza sons para ajudar a dormir.
 
-## Getting Started
+A meta é que o aplicativo tenha uma interface simples e intuitiva, com poucos botões e que seja fácil de usar, 
+e implementar uma funcionalidade de timer para que o usuário possa programar o tempo que o som ficará tocando.
 
-This project is a starting point for a Flutter application.
+O principal objetivo é o aprendizado, toda ajuda é bem vinda.
 
-A few resources to get you started if this is your first Flutter project:
+## Como contribuir
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Para contribuir com o projeto, você pode seguir os seguintes passos:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Faça um fork do projeto
+2. Crie uma branch para sua contribuição
+3. Faça as alterações necessárias
+4. Faça um commit das suas alterações
+5. Faça um push para a sua branch
+6. Abra um pull request
+
