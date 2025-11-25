@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sons/view/widgets/music_card.dart';
 
 class home extends StatefulWidget {
   const home({super.key});
@@ -11,16 +12,21 @@ class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Sons para dormir',
         home: Scaffold(
           appBar: AppBar(
             iconTheme: const IconThemeData(color: Colors.black),
+            title: const Text('Sons para dormir',
+                style: TextStyle(color: Colors.black)),
+            backgroundColor: Colors.lightBlueAccent,
+            elevation: 0,
           ),
-          body: const Center(
-            child: Text(
-              'Sons para dormir',
-              style: TextStyle(fontSize: 24),
-            ),
+          body: ListView.builder(
+            itemCount: 2, // Fixed count as requested
+            itemBuilder: (context, index) {
+              return const MusicCard();
+            },
           ),
           drawer: Drawer(
             child: ListView(
@@ -36,7 +42,7 @@ class _homeState extends State<home> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => home()),
+                      MaterialPageRoute(builder: (context) => const home()),
                     );
                   },
                 ),
